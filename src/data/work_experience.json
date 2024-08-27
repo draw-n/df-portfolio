@@ -1,0 +1,42 @@
+[
+    {
+        "role": "SEO Intern",
+        "duration": "May 2024-August 2024",
+        "company": "Ancestry",
+        "description": "As a SEO Intern, I worked on optimizing Ancestry's landing pages to include related keywords to Ancestry's products. This would allow Ancestry to appear at the top of search results, allowing potential customers to interact with the main website.",
+        "image_src": "src/assets/work-experience/Ancestry-Logo.png",
+        "skills": ["Adobe", "Google Search Console", "Conductor"]
+    },
+    {
+        "role": "Research Assistant",
+        "duration": "October 2023-August 2024",
+        "company": "Socio-Technical Interaction Research Lab",
+        "description": "I assisted with projects related to collaborative privacy and youth smartphone usage under a REU grant. I also helped update the lab website with recently published papers.",
+        "image_src": "src/assets/work-experience/image-removebg-preview-14-300x300-1.png",
+        "skills": ["Research", "Wordpress", "Overleaf"]
+    },
+    {
+        "role": "DF 2100 Undergraduate Assistant",
+        "duration": "August 2024-Present",
+        "company": "Vanderbilt School of Engineering",
+        "description": "I host 2 hours of office hours each week to assist DF 2100 with projects. I also set up equipment and work on projects to benefit the Digital Fabrication lab.",
+        "image_src": "src/assets/work-experience/logo.png",
+        "skills": ["CAD", "3D Printing", "Circuits"]
+    },
+    {
+        "role": "CS 1101 Grader",
+        "duration": "August 2024-Present",
+        "company": "Vanderbilt Computer Science Department",
+        "description": "I host 3 hours of office hours each week for CS 1101 students to come in and ask questions or get help on assignments. I also assist with grading programming assignments and exams.",
+        "image_src": "src/assets/work-experience/vandy-logo.png",
+        "skills": ["Teaching", "Programming", "Java"]
+    },
+    {
+        "role": "Summer Camp STEM Counselor",
+        "duration": "June 2023 - August 2023",
+        "company": "theCoderSchool",
+        "description": "I taught 5 weeks of coding classes on introductory Python and simple AI topics to students ages 9-15 years old. I also assisted with creating the curriculum for the classes.",
+        "image_src": "src/assets/work-experience/logostacked-black.png",
+        "skills": ["Teaching", "Programming", "Python"]
+    }
+]

@@ -1,0 +1,78 @@
+[
+    {
+        "name": "Python",
+        "level": 4.5,
+        "type": "Programming Language"
+    },
+    {
+        "name": "Java",
+        "level": 4.5,
+        "type": "Programming Language"
+    },
+    {
+        "name": "C++",
+        "level": 3.5,
+        "type": "Programming Language"
+    },
+    {
+        "name": "C",
+        "level": 3,
+        "type": "Programming Language"
+    },
+    {
+        "name": "JavaScript",
+        "level": 4,
+        "type": "Programming Language"
+    },
+    {
+        "name": "TypeScript",
+        "level": 3.5,
+        "type": "Programming Language"
+    },
+    {
+        "name": "Godot",
+        "level": 4,
+        "type": "App Development"
+    },
+    {
+        "name": "Filament Printing",
+        "level": 4.5,
+        "type": "Digital Fabrication"
+    },
+    {
+        "name": "CAD",
+        "level": 4.5,
+        "type": "Digital Fabrication"
+    },
+    {
+        "name": "Circuitry",
+        "level": 3,
+        "type": "Digital Fabrication"
+    },
+    {
+        "name": "Metrology",
+        "level": 3.5,
+        "type": "Digital Fabrication"
+    },
+    {
+        "name": "Soldering",
+        "level": 3,
+        "type": "Digital Fabrication"
+    },
+    {
+        "name": "React Native",
+        "level": 4,
+        "type": "App Development"
+    },
+    {
+        "name": "Node.js",
+        "level": 4.5,
+        "type": "App Development"
+    },
+    {
+        "name": "Figma",
+        "level": 4.5,
+        "type": "App Development"
+    }
+   
+]
