@@ -1,24 +1,33 @@
-import TestImage from "../../../public/vite.svg";
-import { Title, Grid, Flex, Image, Text } from "@mantine/core";
-
+import { useNavigate } from "react-router-dom";
+import { Grid, Flex, Image, Text, Button } from "@mantine/core";
+import projectsJson from "../../data/projects.json";
 function Projects() {
+    const navigate = useNavigate();
+    const projects = projectsJson.map((project) => {
+        return (
+            <Grid.Col span={3}>
+                <Flex
+                    className="panel-borders about-panel"
+                    justify="space-between"
+                    direction="column"
+                    p="md"
+                    gap="xs"
+                    h="100%"
+                >
+                    <Text>{project.name}</Text>
+                    <Image src={project.image_src} />
+
+                    <Text>{project.description}</Text>
+                    <Button onClick={() => navigate(project.page_src)}>
+                        View
+                    </Button>
+                </Flex>
+            </Grid.Col>
+        );
+    });
     return (
         <>
-            <Title>Projects</Title>
-            <Grid gutter="md">
-                <Grid.Col span={3}>
-                    <Flex direction="column" bg="gray" p="lg" gap="sm">
-                        <Image src={TestImage}/>
-                        <Text>Syringe Pump</Text>
-                        <Text>This is the syringe pump project.</Text>
-                    </Flex>
-                </Grid.Col>
-                <Grid.Col span={3}>2</Grid.Col>
-
-                <Grid.Col span={3}>3</Grid.Col>
-
-                <Grid.Col span={3}>4</Grid.Col>
-            </Grid>
+            <Grid gutter="md">{projects}</Grid>
         </>
     );
 }

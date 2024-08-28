@@ -1,0 +1,129 @@
+[
+    {
+        "name": "200 mm linear rod with 8 mm diameter",
+        "quantity": 2,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "LM8UU Linear bearing for 8 mm diameter rod",
+        "quantity": 2,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "2040 Aluminum Extrusion 1' Length",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "Nema 17 Stepper Motor",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "MEAN WELL RQ-65D AC-DC Power Supply Quad Output 5V 12V 24V 12V 4 Amp",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "Arduino Uno",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "A4988 Stepper Driver",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "Limit Switch",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "Panel Mount Latching Push Buttons",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "RGB Common Cathode LED",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "250 mm lead screw with 2 mm pitch and 8 mm lead",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "1/4\" x 8mm Flexible Coupling",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "Ball Bearings",
+        "quantity": 2,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "LCD RepRap Smart Controller",
+        "quantity": 1,
+        "image_src": "",
+        "type": "Off The Shelf"
+    },
+    {
+        "name": "Motor Mount",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    },
+    {
+        "name": "Back Barrel Stabilizer",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    },
+    {
+        "name": "Plunger Presser",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    },
+    {
+        "name": "Front Barrel Stabilizer",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    },
+    {
+        "name": "Enclosure Lid",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    },
+    {
+        "name": "End Support",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    },
+
+    {
+        "name": "Enclosure",
+        "quantity": 1,
+        "image_src": "",
+        "type": "3D Printed"
+    }
+]

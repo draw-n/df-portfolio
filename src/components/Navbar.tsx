@@ -49,18 +49,18 @@ function Navbar() {
                     <NavLink
                         className="component-borders"
                         label="Home"
-                        onClick={() => navigate("/df-portfolio")}
+                        onClick={() => navigate("/")}
                     />
                     <NavLink
                         className="component-borders"
                         label="About"
-                        onClick={() => navigate("/df-portfolio/about")}
+                        onClick={() => navigate("/about")}
                     />
 
                     <NavLink
                         className="component-borders"
                         label="Projects"
-                        onClick={() => navigate("/df-portfolio/projects")}
+                        onClick={() => navigate("/projects")}
                     ></NavLink>
                 </Flex>
             </Flex>

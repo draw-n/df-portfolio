@@ -7,10 +7,10 @@ import { BrowserRouter } from "react-router-dom";
 
 createRoot(document.getElementById("root")!).render(
     <StrictMode>
-        <BrowserRouter>
-            <MantineProvider>
+        <MantineProvider>
+            <BrowserRouter basename={import.meta.env.VITE_APP_BASE_URL || "/"}>
                 <App />
-            </MantineProvider>
-        </BrowserRouter>
+            </BrowserRouter>
+        </MantineProvider>
     </StrictMode>
 );

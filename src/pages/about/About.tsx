@@ -1,4 +1,12 @@
-import { Text, Badge, Flex, RingProgress, Grid, Image } from "@mantine/core";
+import {
+    Text,
+    Badge,
+    Flex,
+    RingProgress,
+    Grid,
+    Image,
+    
+} from "@mantine/core";
 
 import ProfileImage from "../../assets/Ancestry__0131.jpg";
 
@@ -48,75 +56,7 @@ function About() {
                         </Text>
                     </Flex>
                 </Grid.Col>
-
-                <Grid.Col span={4}>
-                    <Flex h="100%" gap="md" direction="column" align="stretch">
-                        <Flex
-                            className="panel-borders about-panel"
-                            justify="space-between"
-                            direction="column"
-                            p="md"
-                            gap="xs"
-                        >
-                            <Text>SCHOOL</Text>
-                            <Text>Vanderbilt University</Text>
-
-                            <Flex justify="space-between" align="center">
-                                <Flex direction="column">
-                                    <Text>GRADUATION DATE</Text>
-
-                                    <Text>05/2027</Text>
-                                </Flex>
-
-                                <RingProgress
-                                    roundCaps
-                                    thickness={6}
-                                    size={125}
-                                    sections={[
-                                        {
-                                            value: calculateTimeToGraduate(),
-                                            color: "var(--secondary-color)",
-                                        },
-                                    ]}
-                                    label={
-                                        <div>
-                                            <Text ta="center" fz="lg">
-                                                {calculateTimeToGraduate().toFixed(
-                                                    0
-                                                )}
-                                                %
-                                            </Text>
-                                            <Text
-                                                ta="center"
-                                                fz="xs"
-                                                c="dimmed"
-                                            >
-                                                Completed
-                                            </Text>
-                                        </div>
-                                    }
-                                />
-                            </Flex>
-                        </Flex>
-
-                        <Flex
-                            className="panel-borders about-panel"
-                            justify="space-between"
-                            direction="column"
-                            h="40%"
-                            p="md"
-                            gap="sm"
-                        >
-                            <Text>STUDYING</Text>
-                            <Flex gap="sm" justify="center">
-                                <Badge>CS</Badge>
-                                <Badge>Math</Badge>
-                                <Badge>Digital Fabrication</Badge>
-                            </Flex>
-                        </Flex>
-                    </Flex>
-                </Grid.Col>
-                <Grid.Col span={8}>
+                <Grid.Col>
                     <Flex
                         className="panel-borders about-panel"
                         h="100%"
@@ -127,6 +67,76 @@ function About() {
                     >
                         <Text>WORK EXPERIENCE</Text>
                         <WorkExperience />
+                    </Flex>
+                </Grid.Col>
+                <Grid.Col span={8}>
+                    <Flex
+                        className="panel-borders about-panel"
+                        justify="space-between"
+                        direction="column"
+                        p="md"
+                        gap="xs"
+                    >
+                        <Text>SCHOOL</Text>
+
+                        <Flex justify="space-between" align="center">
+                            <Flex direction="column">
+                                <Text>Vanderbilt University</Text>
+
+                                <Text>GRADUATION DATE</Text>
+
+                                <Text>05/2027</Text>
+                            </Flex>
+
+                            <RingProgress
+                                roundCaps
+                                thickness={6}
+                                size={175}
+                                sections={[
+                                    {
+                                        value: calculateTimeToGraduate(),
+                                        color: "var(--secondary-color)",
+                                    },
+                                ]}
+                                label={
+                                    <div>
+                                        <Text ta="center" fz="lg">
+                                            {calculateTimeToGraduate().toFixed(
+                                                0
+                                            )}
+                                            %
+                                        </Text>
+                                        <Text ta="center" fz="xs" c="dimmed">
+                                            Completed
+                                        </Text>
+                                    </div>
+                                }
+                            />
+                        </Flex>
+                    </Flex>
+                </Grid.Col>
+                <Grid.Col span={4}>
+                    <Flex direction="column" h="100%" gap="md">
+                        <Flex
+                            className="panel-borders about-panel"
+                            direction="column"
+                            p="md"
+                            gap="sm"
+                        >
+                            <Text>MAJORING</Text>
+                            <Badge>COMPUTER SCIENCE</Badge>
+                            <Badge>MATHEMATICS</Badge>
+                        </Flex>
+                        <Flex
+                            className="panel-borders about-panel"
+                            direction="column"
+                            h="100%"
+                            p="md"
+                            gap="sm"
+                        >
+                            <Text>MINORING</Text>
+                            <Badge>DIGITAL FABRICATION</Badge>
+                        </Flex>
                     </Flex>
                 </Grid.Col>
                 <Grid.Col span={6}>
