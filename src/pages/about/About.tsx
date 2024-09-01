@@ -4,12 +4,12 @@ import {
     Flex,
     RingProgress,
     Grid,
-    Image,
-    
+    Title,
 } from "@mantine/core";
 
-import ProfileImage from "../../assets/Ancestry__0131.jpg";
+import { IconUser } from "@tabler/icons-react";
 
+import "./About.css";
 import Skills from "../../components/Skills";
 import WorkExperience from "../../components/WorkExperience";
 
@@ -26,15 +26,24 @@ function calculateTimeToGraduate() {
 function About() {
     return (
         <>
+            <Flex
+                mx="xl"
+                top="0"
+                align="center"
+                gap="md"
+                justify="center"
+                className="heading-panel"
+            >
+                <IconUser stroke={2} />
+                <Title>ABOUT</Title>
+            </Flex>
             <Grid p="xl">
                 <Grid.Col span={3}>
                     <Flex
-                        className="panel-borders about-panel"
+                        className="panel-borders about-panel about-photo"
                         direction="column"
                         h="100%"
-                    >
-                        <Image src={ProfileImage} className="panel-borders" />
-                    </Flex>
+                    ></Flex>
                 </Grid.Col>
 
                 <Grid.Col span={9}>
@@ -44,7 +53,7 @@ function About() {
                         direction="column"
                         h="100%"
                     >
-                        <Text>OBJECTIVE</Text>
+                        <Text className="subheading">OBJECTIVE</Text>
                         <Text>
                             I get really excited for all things STEM, especially
                             when it comes to technology. I have had many
@@ -65,7 +74,7 @@ function About() {
                         p="md"
                         gap="sm"
                     >
-                        <Text>WORK EXPERIENCE</Text>
+                        <Text className="subheading">WORK EXPERIENCE</Text>
                         <WorkExperience />
                     </Flex>
                 </Grid.Col>
@@ -77,7 +86,7 @@ function About() {
                         p="md"
                         gap="xs"
                     >
-                        <Text>SCHOOL</Text>
+                        <Text className="subheading">SCHOOL</Text>
 
                         <Flex justify="space-between" align="center">
                             <Flex direction="column">
@@ -92,10 +101,11 @@ function About() {
                                 roundCaps
                                 thickness={6}
                                 size={175}
+                                rootColor="var(--chart-background)"
                                 sections={[
                                     {
                                         value: calculateTimeToGraduate(),
-                                        color: "var(--secondary-color)",
+                                        color: "var(--accent-secondary)",
                                     },
                                 ]}
                                 label={
@@ -123,7 +133,7 @@ function About() {
                             p="md"
                             gap="sm"
                         >
-                            <Text>MAJORING</Text>
+                            <Text className="subheading">MAJORING</Text>
                             <Badge>COMPUTER SCIENCE</Badge>
                             <Badge>MATHEMATICS</Badge>
                         </Flex>
@@ -134,7 +144,7 @@ function About() {
                             p="md"
                             gap="sm"
                         >
-                            <Text>MINORING</Text>
+                            <Text className="subheading">MINORING</Text>
                             <Badge>DIGITAL FABRICATION</Badge>
                         </Flex>
                     </Flex>
@@ -148,7 +158,7 @@ function About() {
                         p="md"
                         gap="sm"
                     >
-                        <Text>PUBLICATION</Text>
+                        <Text className="subheading">PUBLICATION</Text>
                         <Text>
                             Contributing author to short paper titled "Browsing
                             without Third-Party Cookies: What Do You See?",
@@ -161,12 +171,11 @@ function About() {
                     <Flex
                         className="panel-borders about-panel"
                         h="100%"
-                        justify="space-between"
                         direction="column"
                         p="md"
                         gap="sm"
                     >
-                        <Text>AWARD</Text>
+                        <Text className="subheading">AWARD</Text>
                         <Text>National Merit Scholar</Text>
                     </Flex>
                 </Grid.Col>
@@ -174,12 +183,11 @@ function About() {
                     <Flex
                         className="panel-borders about-panel"
                         h="100%"
-                        justify="space-between"
                         direction="column"
                         p="md"
                         gap="sm"
                     >
-                        <Text>AWARD</Text>
+                        <Text className="subheading">AWARD</Text>
                         <Text>National Cyber Scholar with Honors</Text>
                     </Flex>
                 </Grid.Col>
@@ -193,7 +201,7 @@ function About() {
                         p="md"
                         gap="sm"
                     >
-                        <Text>SKILLS</Text>
+                        <Text className="subheading">SKILLS</Text>
                         <Skills />
                     </Flex>
                 </Grid.Col>

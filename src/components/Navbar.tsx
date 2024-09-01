@@ -1,11 +1,11 @@
 import { Flex, Image, NavLink, Title, ActionIcon, Group } from "@mantine/core";
-import { useNavigate } from "react-router-dom";
+import { useNavigate, useLocation } from "react-router-dom";
 import NavLogo from "../../public/vite.svg";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 function Navbar() {
     const navigate = useNavigate();
-
+    const location = useLocation();
     return (
         <>
             <Flex
@@ -17,27 +17,27 @@ function Navbar() {
                 justify="center"
             >
                 <Image src={NavLogo} p="xl" w="150px" />
-                <Title ta="center">Helen Wu</Title>
+                <Title ta="center" className="nav-title">Helen Wu</Title>
                 <Group justify="space-evenly">
                     <ActionIcon
-                        c="var(--accent-color)"
+                        color="var(--accent-secondary)"
                         component="a"
                         href="https://github.com/draw-n"
                         variant="subtle"
                         radius="sm"
                         aria-label="Github"
                     >
-                        <IconBrandGithub stroke={2} />
+                        <IconBrandGithub stroke={2} size={60} />
                     </ActionIcon>
                     <ActionIcon
-                        c="var(--accent-color)"
+                        color="var(--accent-secondary)"
                         component="a"
                         href="https://www.linkedin.com/in/helen-w-cs/"
                         variant="subtle"
                         radius="sm"
                         aria-label="Linkedin"
                     >
-                        <IconBrandLinkedin stroke={2} />
+                        <IconBrandLinkedin stroke={2} size={60} />
                     </ActionIcon>
                 </Group>
                 <Flex
@@ -45,22 +45,32 @@ function Navbar() {
                     justify="space-between"
                     align="start"
                     w="100%"
+                    gap="sm"
                 >
                     <NavLink
-                        className="component-borders"
+                        color="var(--accent-primary)"
+                        variant="filled"
+                        className="component-borders nav-link"
                         label="Home"
                         onClick={() => navigate("/")}
+                        active={location.pathname === "/"}
                     />
                     <NavLink
-                        className="component-borders"
+                        color="var(--accent-primary)"
+                        className="component-borders nav-link"
                         label="About"
+                        variant="filled"
                         onClick={() => navigate("/about")}
+                        active={location.pathname === "/about"}
                     />
 
                     <NavLink
-                        className="component-borders"
+                        color="var(--accent-primary)"
+                        variant="filled"
+                        className="component-borders nav-link"
                         label="Projects"
                         onClick={() => navigate("/projects")}
+                        active={location.pathname.includes("/projects")}
                     ></NavLink>
                 </Flex>
             </Flex>

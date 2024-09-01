@@ -10,6 +10,7 @@ import {
     Title,
     List,
     ScrollArea,
+    AspectRatio,
 } from "@mantine/core";
 import { IconCode, IconDownload } from "@tabler/icons-react";
 import { useState } from "react";
@@ -28,7 +29,7 @@ function SyringePump() {
 
     return (
         <>
-            <Grid>
+            <Grid p="xl">
                 <Grid.Col span={4}>
                     <Flex
                         className="panel-borders about-panel"
@@ -52,7 +53,7 @@ function SyringePump() {
                             gap="xs"
                             h="40%"
                         >
-                            <Text>PURPOSE</Text>
+                            <Text className="subheading">PURPOSE</Text>
                             <Text>
                                 Syringe pumps are motor-driven devices that can
                                 deliver precise and accurate amounts of fluid.
@@ -68,7 +69,7 @@ function SyringePump() {
                             gap="xs"
                             h="60%"
                         >
-                            <Text>FEATURES</Text>
+                            <Text className="subheading">FEATURES</Text>
                         </Flex>
                     </Flex>
                 </Grid.Col>
@@ -78,11 +79,17 @@ function SyringePump() {
                         justify="space-between"
                         direction="column"
                         p="md"
-                        gap="xs"
+                        gap="sm"
                     >
                         <Flex justify="space-between">
-                            <Text>ARDUINO CODE</Text>
-                            <ActionIcon component="a" href={codeTxt}>
+                            <Text className="subheading">ARDUINO CODE</Text>
+                            <ActionIcon
+                                component="a"
+                                variant="subtle"
+                                color="var(--accent-secondary)"
+                                target="_blank"
+                                href={codeTxt}
+                            >
                                 <IconDownload stroke={2} />
                             </ActionIcon>
                         </Flex>
@@ -91,7 +98,10 @@ function SyringePump() {
                                 key="Arduino Code"
                                 value="Arduino Code"
                             >
-                                <Accordion.Control icon={<IconCode />}>
+                                <Accordion.Control
+                                    className="component-borders"
+                                    icon={<IconCode />}
+                                >
                                     View
                                 </Accordion.Control>
                                 <Accordion.Panel>
@@ -110,21 +120,29 @@ function SyringePump() {
                         gap="xs"
                     >
                         <Flex justify="space-between" align="start">
-                            <Text>ITEMS AND MATERIALS</Text>
+                            <Text className="subheading">
+                                ITEMS AND MATERIALS
+                            </Text>
                             <Flex justify="end" gap="md">
                                 <Button
+                                    color="var(--accent-secondary)"
+                                    size="xs"
+                                    className="component-borders"
                                     onClick={() =>
                                         setMaterialsType("Off The Shelf")
                                     }
                                 >
-                                    Off the Shelf
+                                    OFF THE SHELF
                                 </Button>
                                 <Button
+                                    color="var(--accent-primary)"
+                                    size="xs"
+                                    className="component-borders"
                                     onClick={() =>
                                         setMaterialsType("3D Printed")
                                     }
                                 >
-                                    3D Printed
+                                    3D PRINTED
                                 </Button>
                             </Flex>
                         </Flex>
@@ -141,7 +159,7 @@ function SyringePump() {
                         p="md"
                         gap="xs"
                     >
-                        <Text>HOW TO OPERATE</Text>
+                        <Text className="subheading">HOW TO OPERATE</Text>
                         <ScrollArea h={300}>
                             <List type="ordered">
                                 <List.Item>
@@ -203,10 +221,15 @@ function SyringePump() {
                         p="md"
                         gap="xs"
                     >
-                        <Text>
-                            Interactive Fusion 360 model of the Syringe pump
-                            assembly (or personal project)
+                        <Text className="subheading">
+                            INTERACTIVE FUSION MODEL
                         </Text>
+                        <AspectRatio ratio={16 / 9}>
+                            <iframe
+                                className="component-borders"
+                                src="https://vanderbilt643.autodesk360.com/shares/public/SH286ddQT78850c0d8a4101dbfcba2fd249e?mode=embed"
+                            ></iframe>
+                        </AspectRatio>
                     </Flex>
                 </Grid.Col>
             </Grid>

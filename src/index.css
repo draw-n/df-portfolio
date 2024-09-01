@@ -1,15 +1,46 @@
 :root {
-  --primary-bg-color: #e6f4f1;
-  --primary-text-color: #f4f9ff;
-  --accent-color: #1e90ff;
-  --secondary-color: #7e90bc;
-  --dark-color: #414756;
+  /* Background Colors with Hue Tint */
+  --background-main: #D9E2EC; /* Light blue tint */
+  --panel-background: #E8F0F7; /* Very light blue tint */
+  --panel-border: #BCC6D6; /* Light blue-gray tint */
+  
+  /* Text Colors */
+  --text-primary: #333333; /* Dark gray for primary text */
+  --text-secondary: #999999; /* Lighter gray for secondary text */
+  
+  /* Accent Colors */
+  --accent-primary: #007BFF; /* Bright blue */
+  --accent-secondary: #FF6F61; /* Coral */
+  
+  /* Secondary Color */
+  --color-secondary: #0056A0; /* Deep blue */
+  
+  /* Navbar Color */
+  --navbar-background: #495057; /* Lighter charcoal gray */
+  
+  --chart-background: #BCC6D6;
+
+  /* Panel Header Color */
+  --panel-header: #007BFF; /* Matches primary accent color */
+
+}
+
+@font-face {
+  font-family: Rowdies;
+  src: url("./assets/fonts/Rowdies-Regular.ttf") format("truetype");  
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: Rowdies;
+  src: url("./assets/fonts/Rowdies-Bold.ttf") format("truetype");  
+  font-weight: bold;
 }
 
 body {
-  background-color: var(--primary-bg-color);
+  background-color: var(--background-main);
 }
 
 .mantine-AppShell-navbar {
-  background-color: var(--primary-bg-color);
+  background-color: var(--background-main);
 }

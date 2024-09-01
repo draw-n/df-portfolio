@@ -7,10 +7,10 @@ function Skills() {
             <Table.Tr key={row.name}>
                 <Table.Td>{row.name}</Table.Td>
                 <Table.Td>
-                    <Badge>{row.type}</Badge>
+                    <Badge color="var(--accent-primary)">{row.type}</Badge>
                 </Table.Td>
                 <Table.Td>
-                    <Rating value={row.level} fractions={2} readOnly />
+                    <Rating color="var(--accent-secondary)" value={row.level} fractions={2} readOnly />
                 </Table.Td>
             </Table.Tr>
         );

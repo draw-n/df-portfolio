@@ -1,11 +1,11 @@
 import { useNavigate } from "react-router-dom";
-import { Grid, Flex, Image, Text, Button } from "@mantine/core";
+import { Grid, Flex, Image, Text, Button, Title } from "@mantine/core";
 import projectsJson from "../../data/projects.json";
 function Projects() {
     const navigate = useNavigate();
     const projects = projectsJson.map((project) => {
         return (
-            <Grid.Col span={3}>
+            <Grid.Col span={4}>
                 <Flex
                     className="panel-borders about-panel"
                     justify="space-between"
@@ -14,7 +14,7 @@ function Projects() {
                     gap="xs"
                     h="100%"
                 >
-                    <Text>{project.name}</Text>
+                    <Text className="subheading">{project.name}</Text>
                     <Image src={project.image_src} />
 
                     <Text>{project.description}</Text>
@@ -27,7 +27,13 @@ function Projects() {
     });
     return (
         <>
-            <Grid gutter="md">{projects}</Grid>
+            <Flex mx="xl" top="0" justify="center" className="heading-panel">
+                <Title>Projects</Title>
+            </Flex>
+
+            <Grid p="xl" gutter="md">
+                {projects}
+            </Grid>
         </>
     );
 }

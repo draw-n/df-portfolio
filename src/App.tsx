@@ -1,6 +1,7 @@
 import { Route, Routes } from "react-router-dom";
 import "@mantine/core/styles.css";
 import "@mantine/carousel/styles.css";
+
 import "./App.css";
 import Shell from "./components/Shell";
 

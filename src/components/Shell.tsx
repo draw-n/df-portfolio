@@ -9,7 +9,7 @@ function Shell(props: PropsWithChildren) {
                 width: 250,
                 breakpoint: 0
             }}
-            padding="md"
+            
             withBorder={false}
         >
             <AppShell.Navbar>
