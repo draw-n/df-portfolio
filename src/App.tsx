@@ -9,7 +9,7 @@ import Home from "./pages/home/Home";
 import About from "./pages/about/About";
 import Projects from "./pages/projects/Projects";
 
-import SyringePump from "./pages/projects/SyringePump";
+import SyringePump from "./pages/projects/syringe-pump/SyringePump";
 
 function App() {
     return (

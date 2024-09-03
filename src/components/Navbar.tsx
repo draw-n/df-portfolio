@@ -1,11 +1,21 @@
-import { Flex, Image, NavLink, Title, ActionIcon, Group } from "@mantine/core";
+import {
+    Flex,
+    Image,
+    NavLink,
+    Title,
+    ActionIcon,
+    Group,
+} from "@mantine/core";
 import { useNavigate, useLocation } from "react-router-dom";
 import NavLogo from "../../public/vite.svg";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
+
+
 function Navbar() {
     const navigate = useNavigate();
     const location = useLocation();
+
     return (
         <>
             <Flex
@@ -17,7 +27,9 @@ function Navbar() {
                 justify="center"
             >
                 <Image src={NavLogo} p="xl" w="150px" />
-                <Title ta="center" className="nav-title">Helen Wu</Title>
+                <Title ta="center" className="nav-title">
+                    Helen Wu
+                </Title>
                 <Group justify="space-evenly">
                     <ActionIcon
                         color="var(--accent-secondary)"

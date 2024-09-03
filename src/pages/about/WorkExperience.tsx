@@ -1,6 +1,6 @@
 import { Carousel } from "@mantine/carousel";
 import { Flex, Text, Image, Badge } from "@mantine/core";
-import workExpJson from "../data/work_experience.json";
+import workExpJson from "../../data/work_experience.json";
 
 function WorkExperience() {
     const workExp = workExpJson.map((exp) => {

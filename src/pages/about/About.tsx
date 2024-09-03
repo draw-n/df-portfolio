@@ -1,17 +1,9 @@
-import {
-    Text,
-    Badge,
-    Flex,
-    RingProgress,
-    Grid,
-    Title,
-} from "@mantine/core";
-
-import { IconUser } from "@tabler/icons-react";
+import { Text, Badge, Flex, RingProgress, Grid } from "@mantine/core";
 
 import "./About.css";
-import Skills from "../../components/Skills";
-import WorkExperience from "../../components/WorkExperience";
+import Skills from "./Skills";
+import WorkExperience from "./WorkExperience";
+import HeadingPanel from "../../components/HeadingPanel";
 
 function calculateTimeToGraduate() {
     let dateTime = new Date();
@@ -26,27 +18,18 @@ function calculateTimeToGraduate() {
 function About() {
     return (
         <>
-            <Flex
-                mx="xl"
-                top="0"
-                align="center"
-                gap="md"
-                justify="center"
-                className="heading-panel"
-            >
-                <IconUser stroke={2} />
-                <Title>ABOUT</Title>
-            </Flex>
+            <HeadingPanel title={"ABOUT"} />
             <Grid p="xl">
-                <Grid.Col span={3}>
+                <Grid.Col span={{ base: 12, md: 3 }}>
                     <Flex
                         className="panel-borders about-panel about-photo"
                         direction="column"
-                        h="100%"
+                        h={{ base: "auto", md: "100%" }}
+                        w={{ base: "100%", md: "auto" }}
                     ></Flex>
                 </Grid.Col>
 
-                <Grid.Col span={9}>
+                <Grid.Col span={{ base: 12, md: 9 }}>
                     <Flex
                         className="panel-borders about-panel"
                         p="lg"
@@ -78,7 +61,7 @@ function About() {
                         <WorkExperience />
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={8}>
+                <Grid.Col span={{ base: 12, md: 8 }}>
                     <Flex
                         className="panel-borders about-panel"
                         justify="space-between"
@@ -125,7 +108,7 @@ function About() {
                         </Flex>
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={4}>
+                <Grid.Col span={{ base: 12, md: 4 }}>
                     <Flex direction="column" h="100%" gap="md">
                         <Flex
                             className="panel-borders about-panel"
@@ -149,7 +132,7 @@ function About() {
                         </Flex>
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={6}>
+                <Grid.Col span={{ base: 12, md: 6 }}>
                     <Flex
                         className="panel-borders about-panel"
                         h="100%"
@@ -167,7 +150,7 @@ function About() {
                         </Text>
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={3}>
+                <Grid.Col span={{ base: 12, md: 3 }}>
                     <Flex
                         className="panel-borders about-panel"
                         h="100%"
@@ -179,7 +162,7 @@ function About() {
                         <Text>National Merit Scholar</Text>
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={3}>
+                <Grid.Col span={{ base: 12, md: 3 }}>
                     <Flex
                         className="panel-borders about-panel"
                         h="100%"

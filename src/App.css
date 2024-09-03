@@ -12,18 +12,17 @@
     border-radius: 0px 20px 20px 0px;
 }
 
-.nav-link {
-    color: #FFF;
+.nav-link:hover {
+    background-color: var(--navlink-hover-background);
 }
 
-.nav-link:hover {
+.nav-link:where([data-active], [aria-current="page"]):hover {
+    color: #fff;
     background-color: var(--color-secondary);
-    color: #FFF;
 }
 
 .nav-title {
     font-family: Rowdies, sans-serif;
-    color: #FFF;
 }
 
 .about-panel {
@@ -41,14 +40,13 @@
 
 .heading-panel {
     background-color: var(--navbar-background);
-    color: #FFF;
     border-radius: 0px 0px 20px 20px;
     padding: 30px 0;
     filter: drop-shadow(0px 4px 0px var(--dark-color));
 }
 
 .heading {
-    
+    font-family: Rowdies, sans-serif;
 }
 
 .subheading {

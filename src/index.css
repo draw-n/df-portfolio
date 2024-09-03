@@ -1,46 +1,53 @@
 :root {
-  /* Background Colors with Hue Tint */
-  --background-main: #D9E2EC; /* Light blue tint */
-  --panel-background: #E8F0F7; /* Very light blue tint */
-  --panel-border: #BCC6D6; /* Light blue-gray tint */
-  
-  /* Text Colors */
-  --text-primary: #333333; /* Dark gray for primary text */
-  --text-secondary: #999999; /* Lighter gray for secondary text */
-  
-  /* Accent Colors */
-  --accent-primary: #007BFF; /* Bright blue */
-  --accent-secondary: #FF6F61; /* Coral */
-  
-  /* Secondary Color */
-  --color-secondary: #0056A0; /* Deep blue */
-  
-  /* Navbar Color */
-  --navbar-background: #495057; /* Lighter charcoal gray */
-  
-  --chart-background: #BCC6D6;
+    /* Background Colors with Hue Tint */
+    --background-main: #d9e2ec; /* Light blue tint */
+    --panel-background: #e8f0f7; /* Very light blue tint */
+    --panel-border: #bcc6d6; /* Light blue-gray tint */
 
-  /* Panel Header Color */
-  --panel-header: #007BFF; /* Matches primary accent color */
+    /* Text Colors */
+    --text-primary: #333333; /* Dark gray for primary text */
+    --text-secondary: #999999; /* Lighter gray for secondary text */
 
+    /* Accent Colors */
+    --accent-primary: #007bff; /* Bright blue */
+    --accent-secondary: #ff6f61; /* Coral */
+
+    /* Secondary Color */
+    --color-secondary: #0056a0; /* Deep blue */
+
+    /* Navbar Color */
+    --navbar-background: #bcc6d6; /* Lighter charcoal gray */
+    --navbar-mobile-background: rgba(0, 0, 0, 0.5);
+    --navlink-hover-background: #9aa4b4;
+    --chart-background: #bcc6d6;
+
+    /* Panel Header Color */
+    --panel-header: #007bff; /* Matches primary accent color */
 }
 
 @font-face {
-  font-family: Rowdies;
-  src: url("./assets/fonts/Rowdies-Regular.ttf") format("truetype");  
-  font-weight: normal;
+    font-family: Rowdies;
+    src: url("./assets/fonts/Rowdies-Regular.ttf") format("truetype");
+    font-weight: normal;
 }
 
 @font-face {
-  font-family: Rowdies;
-  src: url("./assets/fonts/Rowdies-Bold.ttf") format("truetype");  
-  font-weight: bold;
+    font-family: Rowdies;
+    src: url("./assets/fonts/Rowdies-Bold.ttf") format("truetype");
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: Rowdies;
+    src: url("./assets/fonts/Rowdies-Light.ttf") format("truetype");
+    font-weight: light;
 }
 
 body {
-  background-color: var(--background-main);
+    background-color: var(--background-main);
+    color: var(--text-primary);
 }
 
 .mantine-AppShell-navbar {
-  background-color: var(--background-main);
+    color: var(--text-primary);
 }

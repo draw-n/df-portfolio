@@ -1,4 +1,4 @@
-import skillsJson from "../data/skills.json";
+import skillsJson from "../../data/skills.json";
 import { Table, Rating, ScrollArea, Badge } from "@mantine/core";
 
 function Skills() {

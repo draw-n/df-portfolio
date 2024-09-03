@@ -1,36 +1,27 @@
 import {
     Text,
-    Code,
-    Accordion,
     Button,
     Flex,
     Grid,
-    ActionIcon,
     Image,
     Title,
     List,
     ScrollArea,
     AspectRatio,
 } from "@mantine/core";
-import { IconCode, IconDownload } from "@tabler/icons-react";
 import { useState } from "react";
-import codeTxt from "../../data/syringe_pump.txt";
-import SyringePumpMaterials from "../../components/SyringePumpMaterials";
-import SyringePumpImage from "../../assets/projects/syringe-pump.jpg";
+import SyringePumpMaterials from "./SyringePumpMaterials";
+import codeTxt from "../../../data/syringe_pump.txt";
+import CodeDropdown from "../../../components/CodeDropdown";
+import SyringePumpImage from "../../../../public/project-images/syringe-pump/syringe-pump.jpg";
 
 function SyringePump() {
     const [materialsType, setMaterialsType] = useState("Off The Shelf");
-    const [code, setCode] = useState<string | undefined>();
-    fetch(codeTxt)
-        .then((response) => response.text())
-        .then((textContent) => {
-            setCode(textContent);
-        });
 
     return (
         <>
             <Grid p="xl">
-                <Grid.Col span={4}>
+                <Grid.Col span={{ base: 12, md: 4 }}>
                     <Flex
                         className="panel-borders about-panel"
                         justify="space-between"
@@ -43,15 +34,14 @@ function SyringePump() {
                         <Image src={SyringePumpImage} />
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={8}>
+                <Grid.Col span={{ base: 12, md: 8 }}>
                     <Flex direction="column" gap="md" h="100%">
                         <Flex
                             className="panel-borders about-panel"
-                            justify="space-between"
                             direction="column"
                             p="md"
                             gap="xs"
-                            h="40%"
+                            flex="1"
                         >
                             <Text className="subheading">PURPOSE</Text>
                             <Text>
@@ -63,13 +53,19 @@ function SyringePump() {
                         </Flex>
                         <Flex
                             className="panel-borders about-panel"
-                            justify="space-between"
                             direction="column"
                             p="md"
                             gap="xs"
-                            h="60%"
+                            flex="1"
                         >
                             <Text className="subheading">FEATURES</Text>
+                            <List>
+                                <List.Item>LCD Screen for selecting desired flow rates</List.Item>
+                                <List.Item>Temporary buttons for adjusting the syringe</List.Item>
+                                <List.Item>Toggle button for pausing the machine</List.Item>
+                                <List.Item>LED to indicate machine status</List.Item>
+                                <List.Item>Linear actuator component for pressing syringe plunger</List.Item>
+                            </List>
                         </Flex>
                     </Flex>
                 </Grid.Col>
@@ -81,37 +77,10 @@ function SyringePump() {
                         p="md"
                         gap="sm"
                     >
-                        <Flex justify="space-between">
-                            <Text className="subheading">ARDUINO CODE</Text>
-                            <ActionIcon
-                                component="a"
-                                variant="subtle"
-                                color="var(--accent-secondary)"
-                                target="_blank"
-                                href={codeTxt}
-                            >
-                                <IconDownload stroke={2} />
-                            </ActionIcon>
-                        </Flex>
-                        <Accordion>
-                            <Accordion.Item
-                                key="Arduino Code"
-                                value="Arduino Code"
-                            >
-                                <Accordion.Control
-                                    className="component-borders"
-                                    icon={<IconCode />}
-                                >
-                                    View
-                                </Accordion.Control>
-                                <Accordion.Panel>
-                                    <Code block>{code}</Code>
-                                </Accordion.Panel>
-                            </Accordion.Item>
-                        </Accordion>
+                        <CodeDropdown title="ARDUINO CODE" filePath={codeTxt} />
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={6}>
+                <Grid.Col span={{ base: 12, md: 6 }}>
                     <Flex
                         className="panel-borders about-panel"
                         justify="space-between"
@@ -150,7 +119,7 @@ function SyringePump() {
                         <SyringePumpMaterials type={materialsType} />
                     </Flex>
                 </Grid.Col>
-                <Grid.Col span={6}>
+                <Grid.Col span={{ base: 12, md: 6 }}>
                     <Flex
                         className="panel-borders about-panel"
                         justify="space-between"

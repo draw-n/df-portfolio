@@ -1,4 +1,4 @@
-import syringePumpJson from "../data/syringe_pump.json";
+import syringePumpJson from "../../../data/syringe_pump.json";
 import { Table, ScrollArea} from "@mantine/core";
 
 type SyringePumpMaterialsProps = {
