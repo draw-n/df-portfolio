@@ -7,7 +7,7 @@ function Projects() {
     const navigate = useNavigate();
     const projects = projectsJson.map((project) => {
         return (
-            <Grid.Col span={{base: 12, md: 4}}>
+            <Grid.Col span={{ base: 12, md: 4 }}>
                 <Flex
                     className="panel-borders about-panel"
                     justify="space-between"
@@ -16,10 +16,12 @@ function Projects() {
                     gap="xs"
                     h="100%"
                 >
-                    <Text className="subheading">{project.name}</Text>
-                    <Image src={project.image_src} />
+                    <Flex direction="column">
+                        <Text className="subheading">{project.name}</Text>
+                        <Image src={project.image_src} />
+                        <Text>{project.description}</Text>
+                    </Flex>
 
-                    <Text>{project.description}</Text>
                     <Button onClick={() => navigate(project.page_src)}>
                         View
                     </Button>

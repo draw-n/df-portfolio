@@ -10,6 +10,7 @@ import About from "./pages/about/About";
 import Projects from "./pages/projects/Projects";
 
 import SyringePump from "./pages/projects/syringe-pump/SyringePump";
+import MicrofluidicDevice from "./pages/projects/microfluidic-device/MicrofluidicDevice";
 
 function App() {
     return (
@@ -25,6 +26,10 @@ function App() {
                 <Route
                     path="/projects/syringe-pump"
                     element={<Shell children={<SyringePump />} />}
+                />
+                <Route
+                    path="/projects/microfluidic-device"
+                    element={<Shell children={<MicrofluidicDevice />} />}
                 />
             </Routes>
         </>
