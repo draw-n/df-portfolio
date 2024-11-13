@@ -26,8 +26,7 @@ function Navbar() {
                 align="center"
                 justify="center"
             >
-                <Image src={NavLogo} p="xl" w="150px" />
-                <Title ta="center" className="nav-title">
+                <Title ta="center" py="lg" className="nav-title">
                     Helen Wu
                 </Title>
                 <Group justify="space-evenly">

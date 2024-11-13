@@ -11,6 +11,7 @@ import Projects from "./pages/projects/Projects";
 
 import SyringePump from "./pages/projects/syringe-pump/SyringePump";
 import MicrofluidicDevice from "./pages/projects/microfluidic-device/MicrofluidicDevice";
+import MultimaterialPliers from "./pages/projects/multimaterial-pliers/MultimaterialPliers";
 
 function App() {
     return (
@@ -30,6 +31,10 @@ function App() {
                 <Route
                     path="/projects/microfluidic-device"
                     element={<Shell children={<MicrofluidicDevice />} />}
+                />
+                <Route
+                    path="/projects/multimaterial-pliers"
+                    element={<Shell children={<MultimaterialPliers />} />}
                 />
             </Routes>
         </>

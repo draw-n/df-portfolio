@@ -10,5 +10,11 @@
         "image_src": "project-images/microfluidic-device/PXL_20241024_130914450.jpg",
         "description": "Microfluidic Devices provide an effective way to mix and sort liquids at a microscopic scale, reducing the need for high quantities of liquid.",
         "page_src": "/projects/microfluidic-device"
+    },
+    {
+        "name": "MULTIMATERIAL PLIERS",
+        "image_src": "project-images/multimaterial-pliers/final-pliers.jpg",
+        "description": "Multimaterial methods are a great way to create a functional part with various mechanical properties, like pliers.",
+        "page_src": "/projects/multimaterial-pliers"
     }
 ]

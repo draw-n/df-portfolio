@@ -1,11 +1,9 @@
 import {
     AspectRatio,
-    Button,
     Flex,
     Grid,
     List,
     ScrollArea,
-    Table,
     Text,
     Title,
     Image,
