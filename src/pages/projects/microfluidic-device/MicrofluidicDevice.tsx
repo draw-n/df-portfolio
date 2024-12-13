@@ -184,6 +184,27 @@ function MicrofluidicDevice() {
                         </Flex>
                     </Flex>
                 </Grid.Col>
+                <Grid.Col>
+                    <Flex
+                        className="panel-borders about-panel"
+                        justify="space-between"
+                        direction="column"
+                        h="100%"
+                        p="md"
+                        gap="xs"
+                    >
+                        <Text className="subheading">
+                            INTERACTIVE FUSION MODEL
+                        </Text>
+                        <AspectRatio ratio={16 / 9}>
+                            <iframe
+                                className="component-borders"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                src="https://www.youtube.com/embed/--6JoKgJHCo?si=ACg-9k1yMhsmbsFn"
+                            ></iframe>
+                        </AspectRatio>
+                    </Flex>
+                </Grid.Col>
             </Grid>
         </>
     );

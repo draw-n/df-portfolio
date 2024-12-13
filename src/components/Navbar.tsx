@@ -1,13 +1,11 @@
 import {
     Flex,
-    Image,
     NavLink,
     Title,
     ActionIcon,
     Group,
 } from "@mantine/core";
 import { useNavigate, useLocation } from "react-router-dom";
-import NavLogo from "../../public/vite.svg";
 import { IconBrandGithub, IconBrandLinkedin } from "@tabler/icons-react";
 
 

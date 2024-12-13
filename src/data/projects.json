@@ -16,5 +16,18 @@
         "image_src": "project-images/multimaterial-pliers/final-pliers.jpg",
         "description": "Multimaterial methods are a great way to create a functional part with various mechanical properties, like pliers.",
         "page_src": "/projects/multimaterial-pliers"
+    },
+    {
+        "name": "BIKE PHONE HOLDER",
+        "image_src": "project-images/bike-phone-holder/IMG_20241122_120029.jpg",
+        "description": "Top-Down Modeling can be used for models with various integrated components, so it was used to create this bike phone holder.",
+        "page_src": "/projects/bike-phone-holder"
+    },
+    {
+        "name": "GENERATED SKATEBOARD TRUCK",
+        "image_src": "project-images/skateboard-truck/PXL_20241209_181606082.jpg",
+        "description": "This skateboard truck was created using generative design methods to minimize material use while still withstanding high impact forces.",
+        "page_src": "/projects/skateboard-truck"
     }
+
 ]

@@ -12,6 +12,8 @@ import Projects from "./pages/projects/Projects";
 import SyringePump from "./pages/projects/syringe-pump/SyringePump";
 import MicrofluidicDevice from "./pages/projects/microfluidic-device/MicrofluidicDevice";
 import MultimaterialPliers from "./pages/projects/multimaterial-pliers/MultimaterialPliers";
+import BikePhoneHolder from "./pages/projects/bike-phone-holder/BikePhoneHolder";
+import SkateboardTruck from "./pages/projects/skateboard-truck/SkateboardTruck";
 
 function App() {
     return (
@@ -35,6 +37,14 @@ function App() {
                 <Route
                     path="/projects/multimaterial-pliers"
                     element={<Shell children={<MultimaterialPliers />} />}
+                />
+                <Route
+                    path="/projects/bike-phone-holder"
+                    element={<Shell children={<BikePhoneHolder />} />}
+                />
+                <Route
+                    path="/projects/skateboard-truck"
+                    element={<Shell children={<SkateboardTruck />} />}
                 />
             </Routes>
         </>
